@@ -16,11 +16,13 @@ export default function About() {
         {/* Navigation */}
         <nav className="relative z-10 flex justify-between items-center px-20 py-6">
           <div className="flex items-center">
-            <img 
-              src="https://api.builder.io/api/v1/image/assets/TEMP/820b28a57f7e990b80c929cd81f74ab9e3da176c?width=288" 
-              alt="Build India Realty Logo" 
-              className="h-16 w-auto"
-            />
+            <a href="/">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/820b28a57f7e990b80c929cd81f74ab9e3da176c?width=288"
+                alt="Build India Realty Logo"
+                className="h-16 w-auto"
+              />
+            </a>
           </div>
           
           <div className="hidden lg:flex items-center space-x-8">
