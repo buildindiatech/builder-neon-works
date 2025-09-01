@@ -24,7 +24,7 @@ export default function About() {
           </div>
           
           <div className="hidden lg:flex items-center space-x-8">
-            <a href="#" className="text-white font-poppins text-lg hover:opacity-80">ABOUT US</a>
+            <a href="/about" className="text-white font-poppins text-lg hover:opacity-80">ABOUT US</a>
             <div className="flex items-center space-x-1">
               <a href="#" className="text-white font-poppins text-lg hover:opacity-80">PROJECT</a>
               <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
