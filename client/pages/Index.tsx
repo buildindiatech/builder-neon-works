@@ -37,7 +37,11 @@ export default function Index() {
             >
               ABOUT US
             </a>
-            <div className="flex items-center space-x-1">
+            <div
+              className="flex items-center space-x-1 relative"
+              onMouseEnter={() => setShowProjectDropdown(true)}
+              onMouseLeave={() => setShowProjectDropdown(false)}
+            >
               <a
                 href="#"
                 className="text-white font-poppins text-lg hover:opacity-80"
