@@ -1,4 +1,9 @@
+import { useState } from 'react';
+import ProjectDropdown from '../components/ProjectDropdown';
+
 export default function About() {
+  const [showProjectDropdown, setShowProjectDropdown] = useState(false);
+
   return (
     <div className="w-full">
       {/* Hero Section */}
