@@ -6,6 +6,12 @@ export default function About() {
 
   return (
     <div className="w-full">
+      {/* Project Dropdown */}
+      <ProjectDropdown
+        isVisible={showProjectDropdown}
+        onClose={() => setShowProjectDropdown(false)}
+      />
+
       {/* Hero Section */}
       <section className="relative h-screen bg-gray-100">
         {/* Background Image */}
