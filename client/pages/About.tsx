@@ -32,7 +32,11 @@ export default function About() {
           
           <div className="hidden lg:flex items-center space-x-8">
             <a href="/about" className="text-white font-poppins text-lg hover:opacity-80">ABOUT US</a>
-            <div className="flex items-center space-x-1">
+            <div
+              className="flex items-center space-x-1 relative"
+              onMouseEnter={() => setShowProjectDropdown(true)}
+              onMouseLeave={() => setShowProjectDropdown(false)}
+            >
               <a href="#" className="text-white font-poppins text-lg hover:opacity-80">PROJECT</a>
               <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 15L7 10H17L12 15Z"/>
