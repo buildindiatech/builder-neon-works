@@ -25,7 +25,7 @@ export default function Index() {
 
           <div className="hidden lg:flex items-center space-x-8">
             <a
-              href="#"
+              href="/about"
               className="text-white font-poppins text-lg hover:opacity-80"
             >
               ABOUT US
