@@ -319,6 +319,7 @@ export default function Index() {
 
       {/* Why Invest in Dholera Smart City Section */}
       <section className="py-24 bg-gray-100">
+        <div className="w-52 h-1 bg-black mx-auto mt-20"></div>
         <div className="container mx-auto px-20">
           <div className="text-center mb-20">
             <h2 className="font-merriweather text-5xl text-black mb-6">Why Invest in Dholera Smart City ?</h2>
