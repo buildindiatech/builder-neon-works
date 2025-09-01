@@ -37,9 +37,35 @@ export default function ProjectDropdown({ isVisible, onClose }: ProjectDropdownP
 
   return (
     <div className="fixed inset-0 z-50 animate-in fade-in duration-200">
-      {/* Backdrop */}
+      {/* Hero Background */}
       <div
-        className="absolute inset-0 bg-white bg-opacity-10 backdrop-blur-md"
+        className="absolute inset-0 bg-cover bg-center"
+        style={{
+          backgroundImage: `url('https://api.builder.io/api/v1/image/assets/TEMP/8f3e95f6c2bec18c54b70ae66565e8108baefe6a?width=3840')`
+        }}
+      >
+        <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+
+        {/* Hero Content */}
+        <div className="absolute bottom-40 left-40 text-white max-w-3xl">
+          <h1 className="font-merriweather text-6xl font-normal mb-8 leading-tight">
+            Rajpath Enclave
+          </h1>
+          <p className="font-poppins text-xl mb-8 leading-relaxed">
+            Rajpath Enclave will provide skillfully designed Residential Plot with all necessities.
+          </p>
+          <button className="bg-white text-black font-poppins font-bold text-lg px-10 py-4 rounded flex items-center space-x-5 hover:bg-gray-100 transition">
+            <span>INQUIRY NOW</span>
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 22 22">
+              <path d="M15.1715 11.917L10.0382 17.0503L11.3444 18.3337L18.6777 11.0003L11.3444 3.66699L10.0382 4.95033L15.1715 10.0837H4.01107V11.917H15.1715Z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Backdrop Blur Overlay */}
+      <div
+        className="absolute inset-0 bg-white bg-opacity-10 backdrop-blur-sm"
         onClick={onClose}
       />
 
