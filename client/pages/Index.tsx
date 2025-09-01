@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import ProjectDropdown from '../components/ProjectDropdown';
+import { useState } from "react";
+import ProjectDropdown from "../components/ProjectDropdown";
 
 export default function Index() {
   const [showProjectDropdown, setShowProjectDropdown] = useState(false);
