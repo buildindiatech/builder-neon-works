@@ -314,8 +314,6 @@ export default function Index() {
               It will serve as a model for India's smart cities, accommodating 2 million people and creating 800,000 jobs while promoting regional growth and innovation.
             </p>
           </div>
-          
-          <div className="w-52 h-1 bg-black mx-auto mt-20"></div>
         </div>
       </section>
 
