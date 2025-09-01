@@ -271,13 +271,11 @@ export default function Index() {
             </div>
           </div>
           
-          <img 
-            src="https://api.builder.io/api/v1/image/assets/TEMP/4f5ebba78d7e6d69d93a2faf558556557936548a?width=3200" 
-            alt="Location Map" 
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/4f5ebba78d7e6d69d93a2faf558556557936548a?width=3200"
+            alt="Location Map"
             className="w-full h-auto rounded border-4 border-white"
           />
-          
-          <div className="w-52 h-1 bg-black mt-20"></div>
         </div>
       </section>
 
