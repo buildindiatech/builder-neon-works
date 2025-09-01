@@ -51,12 +51,12 @@ export default function ProjectDropdown({ isVisible, onClose }: ProjectDropdownP
             {projects.map((project) => (
               <div key={project.id} className="flex flex-col gap-5">
                 {/* Project Card */}
-                <div className="bg-gray-100 rounded overflow-hidden w-80">
-                  <div className="h-64 relative overflow-hidden">
-                    <img 
+                <div className="bg-gray-100 rounded-lg overflow-hidden w-80 hover:shadow-lg transition-shadow cursor-pointer">
+                  <div className="h-60 relative overflow-hidden">
+                    <img
                       src={project.image}
                       alt={project.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="p-5">
@@ -65,7 +65,14 @@ export default function ProjectDropdown({ isVisible, onClose }: ProjectDropdownP
                     </h3>
                     <div className="flex items-center gap-2">
                       <svg className="w-3 h-5 text-gray-600" fill="currentColor" viewBox="0 0 12 20">
-                        <path d="M6 17.8574C5.81667 17.8574 5.65952 17.805 5.52857 17.7002C5.39762 17.5954 5.29941 17.4579 5.23393 17.2877C4.98512 16.5544 4.67083 15.8669 4.29107 15.2252C3.92441 14.5835 3.40714 13.8306 2.73929 12.9663C2.07143 12.102 1.52798 11.277 1.10893 10.4913C0.702976 9.70557 0.5 8.75616 0.5 7.64306C0.5 6.11092 1.03036 4.81449 2.09107 3.75378C3.16488 2.67997 4.46786 2.14307 6 2.14307C7.53214 2.14307 8.82857 2.67997 9.88929 3.75378C10.9631 4.81449 11.5 6.11092 11.5 7.64306C11.5 8.83473 11.2708 9.82997 10.8125 10.6288C10.3673 11.4145 9.85 12.1937 9.26072 12.9663C8.55357 13.9091 8.01667 14.6949 7.65 15.3234C7.29643 15.9389 7.00179 16.5937 6.76607 17.2877C6.7006 17.471 6.59583 17.6151 6.45179 17.7199C6.32083 17.8115 6.17024 17.8574 6 17.8574Z"/>
+                        <g clipPath="url(#clip0_200_1708)">
+                          <path d="M6 17.8574C5.81667 17.8574 5.65952 17.805 5.52857 17.7002C5.39762 17.5954 5.29941 17.4579 5.23393 17.2877C4.98512 16.5544 4.67083 15.8669 4.29107 15.2252C3.92441 14.5835 3.40714 13.8306 2.73929 12.9663C2.07143 12.102 1.52798 11.277 1.10893 10.4913C0.702976 9.70557 0.5 8.75616 0.5 7.64306C0.5 6.11092 1.03036 4.81449 2.09107 3.75378C3.16488 2.67997 4.46786 2.14307 6 2.14307C7.53214 2.14307 8.82857 2.67997 9.88929 3.75378C10.9631 4.81449 11.5 6.11092 11.5 7.64306C11.5 8.83473 11.2708 9.82997 10.8125 10.6288C10.3673 11.4145 9.85 12.1937 9.26072 12.9663C8.55357 13.9091 8.01667 14.6949 7.65 15.3234C7.29643 15.9389 7.00179 16.5937 6.76607 17.2877C6.7006 17.471 6.59583 17.6151 6.45179 17.7199C6.32083 17.8115 6.17024 17.8574 6 17.8574Z"/>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_200_1708">
+                            <rect width="11" height="18.8571" fill="white" transform="translate(0.5 0.571289)"/>
+                          </clipPath>
+                        </defs>
                       </svg>
                       <span className="font-poppins text-base text-gray-600">
                         {project.location}
