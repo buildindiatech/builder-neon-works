@@ -281,6 +281,7 @@ export default function Index() {
 
       {/* Dholera Smart City Project Section */}
       <section className="py-24 bg-white">
+        <div className="w-52 h-1 bg-black mx-auto mt-20"></div>
         <div className="container mx-auto px-20">
           <div className="text-center mb-20">
             <h2 className="font-merriweather text-5xl text-black mb-6">Dholera Smart City Project</h2>
