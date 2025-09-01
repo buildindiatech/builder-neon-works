@@ -263,6 +263,7 @@ export default function Index() {
         <div className="container mx-auto px-20">
           <div className="flex flex-col lg:flex-row gap-20 mb-20">
             <div className="lg:w-1/2">
+              <div className="w-52 h-1 bg-black mt-20"></div>
               <h2 className="font-merriweather text-5xl text-black mb-6 leading-tight">Prime Location</h2>
               <p className="font-poppins text-xl text-gray-600 leading-relaxed">
                 Prime project locations offering excellent connectivity, convenience, and strong future growth potential.
