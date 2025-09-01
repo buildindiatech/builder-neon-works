@@ -391,8 +391,6 @@ export default function Index() {
               </div>
             ))}
           </div>
-          
-          <div className="w-52 h-1 bg-black mx-auto mt-20"></div>
         </div>
       </section>
 
