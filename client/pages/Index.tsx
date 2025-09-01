@@ -66,7 +66,8 @@ export default function Index() {
 
       {/* Why Choose Us Section */}
       <section className="py-24 bg-gray-100">
-        <div className="container mx-auto px-20">
+        <div className="container mx-auto px-20 flex flex-col">
+          <div className="w-52 h-1 bg-black mx-auto mb-10"></div>
           <div className="text-center mb-20">
             <h2 className="font-merriweather text-5xl text-black mb-6">Why Choose Us</h2>
             <p className="font-poppins text-xl text-gray-600 max-w-3xl mx-auto">
