@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'merriweather': ['Merriweather', 'serif'],
-        'poppins': ['Poppins', 'sans-serif'],
+        merriweather: ["Merriweather", "serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
