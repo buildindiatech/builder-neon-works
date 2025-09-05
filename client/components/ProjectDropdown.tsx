@@ -80,8 +80,6 @@ export default function ProjectDropdown({
       {/* Dropdown Content */}
       <div
         className="absolute top-0 left-0 right-0 bg-white rounded-b-lg shadow-2xl animate-in slide-in-from-top duration-300"
-        onMouseEnter={() => {}}
-        onMouseLeave={onClose}
       >
         <div className="pt-32 pb-20 px-40 bg-gray-100">
           {/* Project Grid */}
