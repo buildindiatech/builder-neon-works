@@ -60,12 +60,10 @@ export default function News() {
   ];
 
   const mediaCoverageImages = [
-    // First row
     "https://api.builder.io/api/v1/image/assets/TEMP/fc7979364d4add1ada850f6ae227ebb1251bb201?width=726",
     "https://api.builder.io/api/v1/image/assets/TEMP/26908624b631ceca66c536621f65ece28bb43ea8?width=726",
     "https://api.builder.io/api/v1/image/assets/TEMP/46ac2a937e4eca728b8c5d618f1dcb7f844dff9d?width=726",
     "https://api.builder.io/api/v1/image/assets/TEMP/45caa376040525f37c86e452cbc11a5cf24b19bd?width=726",
-    // Second row
     "https://api.builder.io/api/v1/image/assets/TEMP/691d276af171b75c58858fc432f4db365f94b58f?width=726",
     "https://api.builder.io/api/v1/image/assets/TEMP/0fdfe48f1486cf8ce64cb257321c6a7f461b603e?width=726",
     "https://api.builder.io/api/v1/image/assets/TEMP/e4af741695543ca69122f369ab3e051c16a63e7e?width=726",
@@ -74,7 +72,6 @@ export default function News() {
 
   return (
     <div className="w-full bg-gray-100">
-      {/* Project Dropdown */}
       <ProjectDropdown
         isVisible={showProjectDropdown}
         onClose={() => setShowProjectDropdown(false)}
@@ -83,236 +80,99 @@ export default function News() {
       {/* Navigation Header */}
       <header className="w-full h-28 bg-white border-b-2 border-white relative">
         <nav className="flex w-full justify-between items-center absolute left-40 bottom-2 top-2 h-24 pr-40">
-          {/* Logo */}
           <img
             src="https://api.builder.io/api/v1/image/assets/TEMP/65722f0df00f3e67b8de46abc5c6e73e48cf0ed9?width=288"
             alt="Build India Realty Logo"
             className="w-36 h-24"
           />
 
-          {/* Navigation Links */}
           <div className="flex items-center gap-2">
-            <div className="flex items-center justify-center gap-2 px-5 py-1 rounded">
-              <span className="text-black text-center font-poppins text-lg font-medium">
-                ABOUT US
-              </span>
+            <div className="px-5 py-1">
+              <span className="text-black font-poppins text-lg font-medium">ABOUT US</span>
             </div>
 
             <div
-              className="flex items-center justify-center gap-2 px-2 pl-5 py-1 rounded relative"
+              className="flex items-center gap-2 px-5 py-1 relative"
               onMouseEnter={() => setShowProjectDropdown(true)}
               onMouseLeave={() => setShowProjectDropdown(false)}
             >
-              <span className="text-black font-poppins text-lg font-medium">
-                PROJECT
-              </span>
-              <svg
-                className="w-6 h-6 relative"
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
-              </svg>
+              <span className="text-black font-poppins text-lg font-medium">PROJECT</span>
+              <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/></svg>
             </div>
 
-            <div className="flex items-center justify-center gap-2 px-5 py-1 rounded">
-              <span className="text-black font-poppins text-lg font-medium">
-                DHOLERA SIR
-              </span>
+            <div className="px-5 py-1">
+              <span className="text-black font-poppins text-lg font-medium">DHOLERA SIR</span>
             </div>
 
-            <div className="flex items-center justify-center gap-2 px-5 py-1 rounded bg-gray-100">
-              <span className="text-black font-poppins text-lg font-medium">
-                NEWS
-              </span>
+            <div className="px-5 py-1 bg-gray-100 rounded">
+              <span className="text-black font-poppins text-lg font-medium">NEWS</span>
             </div>
 
-            <div className="flex items-center justify-center gap-2 px-5 py-1 rounded">
-              <span className="text-black font-poppins text-lg font-medium">
-                GALLERY
-              </span>
+            <div className="px-5 py-1">
+              <span className="text-black font-poppins text-lg font-medium">GALLERY</span>
             </div>
 
-            <div className="flex items-center justify-center gap-2 px-5 py-1 rounded">
-              <span className="text-black font-poppins text-lg font-medium">
-                JOIN US
-              </span>
-              <svg
-                className="w-6 h-6 relative"
-                width="24"
-                height="25"
-                viewBox="0 0 24 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
-              </svg>
+            <div className="flex items-center gap-2 px-5 py-1">
+              <span className="text-black font-poppins text-lg font-medium">JOIN US</span>
+              <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/></svg>
             </div>
           </div>
 
-          {/* Contact Button */}
-          <div className="flex h-14 px-10 py-3 justify-center items-center gap-5 rounded bg-black">
-            <span className="text-white font-poppins text-lg font-bold">
-              CONTACT US
-            </span>
+          <div className="flex h-14 px-10 py-3 justify-center items-center rounded bg-black">
+            <span className="text-white font-poppins text-lg font-bold">CONTACT US</span>
           </div>
         </nav>
       </header>
 
       {/* Main Content */}
-      <main className="flex w-full px-40 py-14 flex-col items-center gap-20 bg-gray-100">
+      <main className="flex w-full px-40 py-14 flex-col items-center gap-12 bg-gray-100">
         {/* Header Section */}
-        <div className="flex flex-col items-start gap-10 self-stretch">
-          <div className="flex flex-col items-start gap-5">
-            <h1 className="text-black text-center font-merriweather text-5xl font-normal leading-tight">
-              News
-            </h1>
-            <p className="text-gray-600 text-center font-poppins text-xl font-normal leading-relaxed">
-              {activeTab === "news"
-                ? "Stay informed with recent property trends, infrastructure growth, and development news shaping future."
-                : "Stay updated with the latest real estate developments, market trends, and project updates."}
-            </p>
-          </div>
+        <div className="self-stretch space-y-5">
+          <h1 className="text-black font-merriweather text-5xl leading-tight">News</h1>
+          <p className="text-gray-600 font-poppins text-xl leading-relaxed">
+            {activeTab === "news"
+              ? "Stay informed with recent property trends, infrastructure growth, and development news shaping future."
+              : "Stay updated with the latest real estate developments, market trends, and project updates."}
+          </p>
         </div>
 
-        {/* Tab Navigation */}
-        <div className="flex flex-col items-center gap-12 self-stretch">
-          <div className="flex p-1 justify-center items-center gap-8 rounded border border-white bg-white">
-            <div className="flex flex-col items-start gap-10">
-              <div
-                className={`flex w-125 h-14 justify-between items-start rounded ${activeTab === "news" ? "bg-black" : "bg-white"}`}
-              >
-                <button
-                  onClick={() => setActiveTab("news")}
-                  className="flex px-5 py-0 justify-between items-center flex-1 rounded"
-                >
-                  <div className="flex items-center gap-2">
-                    <span
-                      className={`font-poppins text-lg font-medium ${activeTab === "news" ? "text-white" : "text-gray-600"}`}
-                    >
-                      News
-                    </span>
-                  </div>
-                </button>
-              </div>
-            </div>
-
-            <div
-              className={`flex w-125 h-14 justify-between items-start rounded ${activeTab === "media" ? "bg-black" : "bg-white"}`}
+        {/* Tabs */}
+        <div className="w-full flex justify-center">
+          <div className="w-[600px] max-w-full bg-white rounded-md p-1 flex gap-2">
+            <button
+              onClick={() => setActiveTab("news")}
+              className={`${activeTab === "news" ? "bg-black text-white" : "bg-white text-gray-600"} w-1/2 h-14 rounded-md font-poppins text-lg font-medium transition`}
             >
-              <button
-                onClick={() => setActiveTab("media")}
-                className="flex px-5 py-0 justify-between items-center flex-1 rounded"
-              >
-                <div className="flex h-15 py-1 items-center rounded">
-                  <div className="flex items-center gap-2">
-                    <span
-                      className={`font-poppins text-lg font-medium ${activeTab === "media" ? "text-white" : "text-gray-600"}`}
-                    >
-                      Media Coverage
-                    </span>
-                  </div>
-                </div>
-              </button>
-            </div>
+              News
+            </button>
+            <button
+              onClick={() => setActiveTab("media")}
+              className={`${activeTab === "media" ? "bg-black text-white" : "bg-white text-gray-600"} w-1/2 h-14 rounded-md font-poppins text-lg font-medium transition`}
+            >
+              Media Coverage
+            </button>
           </div>
-
-          {/* Content based on active tab */}
-          {activeTab === "news" ? (
-            // News Articles Grid
-            <div className="flex flex-col items-start gap-12 self-stretch">
-              <div className="flex flex-col items-start gap-20 self-stretch">
-                {/* First Row */}
-                <div className="flex justify-between items-center self-stretch">
-                  {newsArticles.slice(0, 3).map((article, index) => (
-                    <div
-                      key={index}
-                      className="flex w-125 p-10 flex-col items-center gap-7 rounded border border-gray-300 bg-white"
-                    >
-                      <span className="self-stretch text-gray-600 font-poppins text-base font-normal leading-tight">
-                        {article.date}
-                      </span>
-                      <div className="flex h-72 pt-px justify-center items-center self-stretch relative">
-                        <img
-                          className="w-105 h-71 rounded absolute left-0 top-px"
-                          src={article.image}
-                          alt="News article"
-                        />
-                      </div>
-                      <div className="flex flex-col items-start gap-5 self-stretch">
-                        <h3 className="self-stretch text-black font-poppins text-xl font-medium leading-relaxed">
-                          {article.title}
-                        </h3>
-                        <p className="self-stretch text-gray-600 font-poppins text-xl font-normal leading-tight">
-                          {article.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-
-                {/* Second Row */}
-                <div className="flex justify-between items-center self-stretch">
-                  {newsArticles.slice(3, 6).map((article, index) => (
-                    <div
-                      key={index + 3}
-                      className="flex w-125 p-10 flex-col items-center gap-7 rounded border border-gray-300 bg-white"
-                    >
-                      <span className="self-stretch text-gray-600 font-poppins text-base font-normal leading-tight">
-                        {article.date}
-                      </span>
-                      <div className="flex h-72 pt-px justify-center items-center self-stretch relative">
-                        <img
-                          className="w-105 h-71 rounded absolute left-0 top-px"
-                          src={article.image}
-                          alt="News article"
-                        />
-                      </div>
-                      <div className="flex flex-col items-start gap-5 self-stretch">
-                        <h3 className="self-stretch text-black font-poppins text-xl font-medium leading-relaxed">
-                          {article.title}
-                        </h3>
-                        <p className="self-stretch text-gray-600 font-poppins text-xl font-normal leading-tight">
-                          {article.description}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ) : (
-            // Media Coverage Grid
-            <div className="flex flex-col items-start gap-12 self-stretch">
-              {/* First Row */}
-              <div className="flex h-64 items-center gap-12 self-stretch">
-                {mediaCoverageImages.slice(0, 4).map((image, index) => (
-                  <img
-                    key={index}
-                    className="flex-1 self-stretch rounded border border-gray-300"
-                    src={image}
-                    alt={`Media coverage ${index + 1}`}
-                  />
-                ))}
-              </div>
-
-              {/* Second Row */}
-              <div className="flex h-64 items-center gap-12 self-stretch">
-                {mediaCoverageImages.slice(4, 8).map((image, index) => (
-                  <img
-                    key={index + 4}
-                    className="flex-1 self-stretch rounded border border-gray-300"
-                    src={image}
-                    alt={`Media coverage ${index + 5}`}
-                  />
-                ))}
-              </div>
-            </div>
-          )}
         </div>
+
+        {/* Content */}
+        {activeTab === "news" ? (
+          <div className="self-stretch grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            {newsArticles.map((article, idx) => (
+              <article key={idx} className="bg-white border border-gray-300 rounded p-8 flex flex-col gap-5">
+                <span className="text-gray-600 font-poppins text-sm">{article.date}</span>
+                <img src={article.image} alt={article.title} className="w-full h-72 object-cover rounded" />
+                <h3 className="text-black font-poppins text-xl font-medium leading-relaxed">{article.title}</h3>
+                <p className="text-gray-600 font-poppins text-lg leading-relaxed">{article.description}</p>
+              </article>
+            ))}
+          </div>
+        ) : (
+          <div className="self-stretch grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+            {mediaCoverageImages.map((src, idx) => (
+              <img key={idx} src={src} alt={`Media coverage ${idx + 1}`} className="w-full h-64 object-cover rounded border border-gray-300" />
+            ))}
+          </div>
+        )}
       </main>
     </div>
   );
