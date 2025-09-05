@@ -29,7 +29,7 @@ export default function Gallery() {
                 ABOUT US
               </span>
             </div>
-            
+
             <div
               className="flex items-center justify-center gap-2 px-2 pl-5 py-1 rounded relative"
               onMouseEnter={() => setShowProjectDropdown(true)}
@@ -46,7 +46,7 @@ export default function Gallery() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
               </svg>
             </div>
 
@@ -80,7 +80,7 @@ export default function Gallery() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
               </svg>
             </div>
           </div>
@@ -103,7 +103,8 @@ export default function Gallery() {
               Gallery
             </h1>
             <p className="text-gray-600 text-center font-poppins text-xl font-normal leading-relaxed">
-              Explore our gallery showcasing projects, developments, and milestones shaping Dholera's future.
+              Explore our gallery showcasing projects, developments, and
+              milestones shaping Dholera's future.
             </p>
           </div>
         </div>
