@@ -13,98 +13,84 @@ export default function Contact() {
       />
 
       {/* Navigation Header */}
-      <header className="bg-white border-b-2 border-white h-28">
-        <nav className="flex justify-between items-center px-40 py-6 h-full">
+      <header className="w-full h-28 bg-white border-b-2 border-white relative">
+        <nav className="flex w-full justify-between items-center absolute left-40 bottom-2 top-2 h-24 pr-40">
           {/* Logo */}
-          <div className="flex items-center">
-            <a href="/">
-              <img
-                src="https://api.builder.io/api/v1/image/assets/TEMP/65722f0df00f3e67b8de46abc5c6e73e48cf0ed9?width=288"
-                alt="Build India Realty Logo"
-                className="h-16 w-auto"
-              />
-            </a>
-          </div>
+          <img
+            src="https://api.builder.io/api/v1/image/assets/TEMP/65722f0df00f3e67b8de46abc5c6e73e48cf0ed9?width=288"
+            alt="Build India Realty Logo"
+            className="w-36 h-24"
+          />
 
           {/* Navigation Links */}
           <div className="flex items-center gap-2">
             <div className="flex items-center justify-center gap-2 px-5 py-1 rounded">
-              <a
-                href="/about"
-                className="text-black font-poppins text-lg font-medium hover:opacity-80"
-              >
+              <span className="text-black text-center font-poppins text-lg font-medium">
                 ABOUT US
-              </a>
+              </span>
             </div>
 
             <div
-              className="flex items-center justify-center gap-2 px-5 py-1 rounded relative"
+              className="flex items-center justify-center gap-2 px-2 pl-5 py-1 rounded relative"
               onMouseEnter={() => setShowProjectDropdown(true)}
               onMouseLeave={() => setShowProjectDropdown(false)}
             >
-              <a
-                href="#"
-                className="text-black font-poppins text-lg font-medium hover:opacity-80"
-              >
+              <span className="text-black font-poppins text-lg font-medium">
                 PROJECT
-              </a>
+              </span>
               <svg
-                className="w-6 h-6 text-black"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+                className="w-6 h-6 relative"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 15L7 10H17L12 15Z" />
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
               </svg>
             </div>
 
             <div className="flex items-center justify-center gap-2 px-5 py-1 rounded">
-              <a
-                href="#"
-                className="text-black font-poppins text-lg font-medium hover:opacity-80"
-              >
+              <span className="text-black font-poppins text-lg font-medium">
                 DHOLERA SIR
-              </a>
+              </span>
             </div>
 
             <div className="flex items-center justify-center gap-2 px-5 py-1 rounded">
-              <a
-                href="#"
-                className="text-black font-poppins text-lg font-medium hover:opacity-80"
-              >
+              <span className="text-black font-poppins text-lg font-medium">
                 NEWS
-              </a>
+              </span>
             </div>
 
             <div className="flex items-center justify-center gap-2 px-5 py-1 rounded">
-              <a
-                href="#"
-                className="text-black font-poppins text-lg font-medium hover:opacity-80"
-              >
+              <span className="text-black font-poppins text-lg font-medium">
                 GALLERY
-              </a>
+              </span>
             </div>
 
             <div className="flex items-center justify-center gap-2 px-5 py-1 rounded">
-              <a
-                href="#"
-                className="text-black font-poppins text-lg font-medium hover:opacity-80"
-              >
+              <span className="text-black font-poppins text-lg font-medium">
                 JOIN US
-              </a>
+              </span>
               <svg
-                className="w-6 h-6 text-black"
-                fill="currentColor"
-                viewBox="0 0 24 24"
+                className="w-6 h-6 relative"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 15L7 10H17L12 15Z" />
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
               </svg>
             </div>
           </div>
 
           {/* Contact Button */}
-          <button className="bg-black text-white font-poppins text-lg font-bold px-10 py-3 rounded hover:bg-gray-800 transition">
-            CONTACT US
-          </button>
+          <div className="flex h-14 px-10 py-3 justify-center items-center gap-5 rounded bg-black">
+            <span className="text-white font-poppins text-lg font-bold">
+              CONTACT US
+            </span>
+          </div>
         </nav>
       </header>
 
