@@ -8,40 +8,55 @@ export default function News() {
   const newsArticles = [
     {
       date: "August 29, 2025",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/526a08a14f7eb09c271ccb4a9f899fb908964b4f?width=840",
-      title: "Tata–Merck Semiconductor Deal! What It Means for Dholera's Future",
-      description: "The Dholera SIR is continuously getting global attention. Now, German chemi..."
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/526a08a14f7eb09c271ccb4a9f899fb908964b4f?width=840",
+      title:
+        "Tata–Merck Semiconductor Deal! What It Means for Dholera's Future",
+      description:
+        "The Dholera SIR is continuously getting global attention. Now, German chemi...",
     },
     {
       date: "August 25, 2025",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/e71b7e44f44fa215e547025c1f517e8f277938ff?width=840",
-      title: "Investors Take Note: Dholera-Bhavnagar Rail Line Gets Green Signal",
-      description: "With road, rail, airport, and industrial projects moving full steam ahead..."
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/e71b7e44f44fa215e547025c1f517e8f277938ff?width=840",
+      title:
+        "Investors Take Note: Dholera-Bhavnagar Rail Line Gets Green Signal",
+      description:
+        "With road, rail, airport, and industrial projects moving full steam ahead...",
     },
     {
       date: "August 21, 2025",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/b7e4a15ef44f6d2e673e2feea28c8ff18600b194?width=840",
-      title: "Dholera Airport Almost Complete, Real Estate Price Set To Skyrocket",
-      description: "If you have already invested in India's first Greenfield Project & Smart City, Dhole..."
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/b7e4a15ef44f6d2e673e2feea28c8ff18600b194?width=840",
+      title:
+        "Dholera Airport Almost Complete, Real Estate Price Set To Skyrocket",
+      description:
+        "If you have already invested in India's first Greenfield Project & Smart City, Dhole...",
     },
     {
       date: "August 19, 2025",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/4855774f04dc824631800b5a15876d64de4848d5?width=840",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/4855774f04dc824631800b5a15876d64de4848d5?width=840",
       title: "ovt Prioritizes Timely Completion of Ongoing Projects in Dholera",
-      description: "What's happening in Dholera? Why is there so much spotlight on Dholera SI..."
+      description:
+        "What's happening in Dholera? Why is there so much spotlight on Dholera SI...",
     },
     {
       date: "August 17, 2025",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/1fe493009169049a79261a87836246c7dc527ec3?width=840",
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/1fe493009169049a79261a87836246c7dc527ec3?width=840",
       title: "Gujarat: Japan Eyes Semiconductor, EV Investments in Dholera",
-      description: "Dholera, Gujarat – Japan is focusing on Dholera as a key location for significant..."
+      description:
+        "Dholera, Gujarat – Japan is focusing on Dholera as a key location for significant...",
     },
     {
       date: "August 15, 2025",
-      image: "https://api.builder.io/api/v1/image/assets/TEMP/812e771f15b9628d8685b9bb69be2993196b45d8?width=840",
-      title: "Gujarat Accelerates Housing Development to Support Tata's Rs. 91,000 Crore Semiconductor Plant in Dholera",
-      description: "The Gujarat government has initiate..."
-    }
+      image:
+        "https://api.builder.io/api/v1/image/assets/TEMP/812e771f15b9628d8685b9bb69be2993196b45d8?width=840",
+      title:
+        "Gujarat Accelerates Housing Development to Support Tata's Rs. 91,000 Crore Semiconductor Plant in Dholera",
+      description: "The Gujarat government has initiate...",
+    },
   ];
 
   const mediaCoverageImages = [
@@ -54,7 +69,7 @@ export default function News() {
     "https://api.builder.io/api/v1/image/assets/TEMP/691d276af171b75c58858fc432f4db365f94b58f?width=726",
     "https://api.builder.io/api/v1/image/assets/TEMP/0fdfe48f1486cf8ce64cb257321c6a7f461b603e?width=726",
     "https://api.builder.io/api/v1/image/assets/TEMP/e4af741695543ca69122f369ab3e051c16a63e7e?width=726",
-    "https://api.builder.io/api/v1/image/assets/TEMP/3e59506e8dc32298f56d360ed598bfb55edcc972?width=726"
+    "https://api.builder.io/api/v1/image/assets/TEMP/3e59506e8dc32298f56d360ed598bfb55edcc972?width=726",
   ];
 
   return (
@@ -82,7 +97,7 @@ export default function News() {
                 ABOUT US
               </span>
             </div>
-            
+
             <div
               className="flex items-center justify-center gap-2 px-2 pl-5 py-1 rounded relative"
               onMouseEnter={() => setShowProjectDropdown(true)}
@@ -99,7 +114,7 @@ export default function News() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
               </svg>
             </div>
 
@@ -133,7 +148,7 @@ export default function News() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
               </svg>
             </div>
           </div>
@@ -156,10 +171,9 @@ export default function News() {
               News
             </h1>
             <p className="text-gray-600 text-center font-poppins text-xl font-normal leading-relaxed">
-              {activeTab === "news" 
+              {activeTab === "news"
                 ? "Stay informed with recent property trends, infrastructure growth, and development news shaping future."
-                : "Stay updated with the latest real estate developments, market trends, and project updates."
-              }
+                : "Stay updated with the latest real estate developments, market trends, and project updates."}
             </p>
           </div>
         </div>
@@ -168,28 +182,36 @@ export default function News() {
         <div className="flex flex-col items-center gap-12 self-stretch">
           <div className="flex p-1 justify-center items-center gap-8 rounded border border-white bg-white">
             <div className="flex flex-col items-start gap-10">
-              <div className={`flex w-125 h-14 justify-between items-start rounded ${activeTab === "news" ? "bg-black" : "bg-white"}`}>
-                <button 
+              <div
+                className={`flex w-125 h-14 justify-between items-start rounded ${activeTab === "news" ? "bg-black" : "bg-white"}`}
+              >
+                <button
                   onClick={() => setActiveTab("news")}
                   className="flex px-5 py-0 justify-between items-center flex-1 rounded"
                 >
                   <div className="flex items-center gap-2">
-                    <span className={`font-poppins text-lg font-medium ${activeTab === "news" ? "text-white" : "text-gray-600"}`}>
+                    <span
+                      className={`font-poppins text-lg font-medium ${activeTab === "news" ? "text-white" : "text-gray-600"}`}
+                    >
                       News
                     </span>
                   </div>
                 </button>
               </div>
             </div>
-            
-            <div className={`flex w-125 h-14 justify-between items-start rounded ${activeTab === "media" ? "bg-black" : "bg-white"}`}>
-              <button 
+
+            <div
+              className={`flex w-125 h-14 justify-between items-start rounded ${activeTab === "media" ? "bg-black" : "bg-white"}`}
+            >
+              <button
                 onClick={() => setActiveTab("media")}
                 className="flex px-5 py-0 justify-between items-center flex-1 rounded"
               >
                 <div className="flex h-15 py-1 items-center rounded">
                   <div className="flex items-center gap-2">
-                    <span className={`font-poppins text-lg font-medium ${activeTab === "media" ? "text-white" : "text-gray-600"}`}>
+                    <span
+                      className={`font-poppins text-lg font-medium ${activeTab === "media" ? "text-white" : "text-gray-600"}`}
+                    >
                       Media Coverage
                     </span>
                   </div>
@@ -206,7 +228,10 @@ export default function News() {
                 {/* First Row */}
                 <div className="flex justify-between items-center self-stretch">
                   {newsArticles.slice(0, 3).map((article, index) => (
-                    <div key={index} className="flex w-125 p-10 flex-col items-center gap-7 rounded border border-gray-300 bg-white">
+                    <div
+                      key={index}
+                      className="flex w-125 p-10 flex-col items-center gap-7 rounded border border-gray-300 bg-white"
+                    >
                       <span className="self-stretch text-gray-600 font-poppins text-base font-normal leading-tight">
                         {article.date}
                       </span>
@@ -232,7 +257,10 @@ export default function News() {
                 {/* Second Row */}
                 <div className="flex justify-between items-center self-stretch">
                   {newsArticles.slice(3, 6).map((article, index) => (
-                    <div key={index + 3} className="flex w-125 p-10 flex-col items-center gap-7 rounded border border-gray-300 bg-white">
+                    <div
+                      key={index + 3}
+                      className="flex w-125 p-10 flex-col items-center gap-7 rounded border border-gray-300 bg-white"
+                    >
                       <span className="self-stretch text-gray-600 font-poppins text-base font-normal leading-tight">
                         {article.date}
                       </span>
