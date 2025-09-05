@@ -95,7 +95,7 @@ export default function Contact() {
       </header>
 
       {/* Main Content */}
-      <main className="px-40 py-20">
+      <main className="flex w-full px-40 py-14 flex-col items-start gap-44 bg-gray-100">
         {/* Header Section */}
         <div className="flex flex-col items-center gap-5 mb-20">
           <h1 className="text-black text-center font-merriweather text-5xl font-normal leading-tight">
