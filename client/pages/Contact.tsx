@@ -97,7 +97,7 @@ export default function Contact() {
       {/* Main Content */}
       <main className="flex w-full px-40 py-14 flex-col items-start gap-44 bg-gray-100">
         {/* Header Section */}
-        <div className="flex flex-col items-center gap-5 mb-20">
+        <div className="flex flex-col items-start gap-5 self-stretch">
           <h1 className="text-black text-center font-merriweather text-5xl font-normal leading-tight">
             Get in Touch with Our Team
           </h1>
@@ -107,7 +107,7 @@ export default function Contact() {
         </div>
 
         {/* Contact Section */}
-        <div className="flex items-start gap-20 h-auto">
+        <div className="flex h-auto items-start gap-20 self-stretch">
           {/* Contact Form */}
           <div className="flex-1 bg-white rounded p-10">
             <form className="flex flex-col gap-10">
