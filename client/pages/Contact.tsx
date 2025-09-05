@@ -46,7 +46,7 @@ export default function Contact() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
               </svg>
             </div>
 
@@ -80,7 +80,7 @@ export default function Contact() {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
               </svg>
             </div>
           </div>
