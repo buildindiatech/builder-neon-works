@@ -88,7 +88,9 @@ export default function News() {
 
           <div className="flex items-center gap-2">
             <div className="px-5 py-1">
-              <span className="text-black font-poppins text-lg font-medium">ABOUT US</span>
+              <span className="text-black font-poppins text-lg font-medium">
+                ABOUT US
+              </span>
             </div>
 
             <div
@@ -96,34 +98,56 @@ export default function News() {
               onMouseEnter={() => setShowProjectDropdown(true)}
               onMouseLeave={() => setShowProjectDropdown(false)}
             >
-              <span className="text-black font-poppins text-lg font-medium">PROJECT</span>
-              <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
+              <span className="text-black font-poppins text-lg font-medium">
+                PROJECT
+              </span>
+              <svg
+                className="w-6 h-6"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
               </svg>
             </div>
 
             <div className="px-5 py-1">
-              <span className="text-black font-poppins text-lg font-medium">DHOLERA SIR</span>
+              <span className="text-black font-poppins text-lg font-medium">
+                DHOLERA SIR
+              </span>
             </div>
 
             <div className="px-5 py-1 bg-gray-100 rounded">
-              <span className="text-black font-poppins text-lg font-medium">NEWS</span>
+              <span className="text-black font-poppins text-lg font-medium">
+                NEWS
+              </span>
             </div>
 
             <div className="px-5 py-1">
-              <span className="text-black font-poppins text-lg font-medium">GALLERY</span>
+              <span className="text-black font-poppins text-lg font-medium">
+                GALLERY
+              </span>
             </div>
 
             <div className="flex items-center gap-2 px-5 py-1">
-              <span className="text-black font-poppins text-lg font-medium">JOIN US</span>
-              <svg className="w-6 h-6" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black"/>
+              <span className="text-black font-poppins text-lg font-medium">
+                JOIN US
+              </span>
+              <svg
+                className="w-6 h-6"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M12 15.5L7 10.5H17L12 15.5Z" fill="black" />
               </svg>
             </div>
           </div>
 
           <div className="flex h-14 px-10 py-3 justify-center items-center rounded bg-black">
-            <span className="text-white font-poppins text-lg font-bold">CONTACT US</span>
+            <span className="text-white font-poppins text-lg font-bold">
+              CONTACT US
+            </span>
           </div>
         </nav>
       </header>
@@ -132,7 +156,9 @@ export default function News() {
       <main className="flex w-full px-40 pt-14 pb-40 flex-col items-center gap-20 bg-gray-100">
         {/* Header Section */}
         <div className="flex flex-col items-start gap-5 self-stretch">
-          <h1 className="text-black font-merriweather text-5xl font-normal leading-[1.1]">News</h1>
+          <h1 className="text-black font-merriweather text-5xl font-normal leading-[1.1]">
+            News
+          </h1>
           <p className="text-gray-600 font-poppins text-xl font-normal leading-[1.6]">
             {activeTab === "news"
               ? "Stay informed with recent property trends, infrastructure growth, and development news shaping future."
@@ -149,9 +175,11 @@ export default function News() {
                 activeTab === "news" ? "bg-black" : "bg-white"
               }`}
             >
-              <span className={`font-poppins text-lg font-medium ${
-                activeTab === "news" ? "text-white" : "text-gray-600"
-              }`}>
+              <span
+                className={`font-poppins text-lg font-medium ${
+                  activeTab === "news" ? "text-white" : "text-gray-600"
+                }`}
+              >
                 News
               </span>
             </button>
@@ -161,9 +189,11 @@ export default function News() {
                 activeTab === "media" ? "bg-black" : "bg-white"
               }`}
             >
-              <span className={`font-poppins text-lg font-medium ${
-                activeTab === "media" ? "text-white" : "text-gray-600"
-              }`}>
+              <span
+                className={`font-poppins text-lg font-medium ${
+                  activeTab === "media" ? "text-white" : "text-gray-600"
+                }`}
+              >
                 Media Coverage
               </span>
             </button>
@@ -175,13 +205,16 @@ export default function News() {
               {/* First Row */}
               <div className="flex justify-between items-center self-stretch">
                 {newsArticles.slice(0, 3).map((article, idx) => (
-                  <article key={idx} className="flex w-[500px] p-10 flex-col items-center gap-[26px] rounded border border-gray-300 bg-white">
+                  <article
+                    key={idx}
+                    className="flex w-[500px] p-10 flex-col items-center gap-[26px] rounded border border-gray-300 bg-white"
+                  >
                     <span className="self-stretch text-gray-600 font-poppins text-base font-normal leading-[1.35]">
                       {article.date}
                     </span>
                     <div className="flex h-[283px] pt-px justify-center items-center self-stretch relative">
-                      <img 
-                        src={article.image} 
+                      <img
+                        src={article.image}
                         alt={article.title}
                         className="w-[420px] h-[282px] rounded absolute left-0 top-px object-cover"
                       />
@@ -201,13 +234,16 @@ export default function News() {
               {/* Second Row */}
               <div className="flex justify-between items-center self-stretch">
                 {newsArticles.slice(3, 6).map((article, idx) => (
-                  <article key={idx + 3} className="flex w-[500px] p-10 flex-col items-center gap-[26px] rounded border border-gray-300 bg-white">
+                  <article
+                    key={idx + 3}
+                    className="flex w-[500px] p-10 flex-col items-center gap-[26px] rounded border border-gray-300 bg-white"
+                  >
                     <span className="self-stretch text-gray-600 font-poppins text-base font-normal leading-[1.35]">
                       {article.date}
                     </span>
                     <div className="flex h-[283px] pt-px justify-center items-center self-stretch relative">
-                      <img 
-                        src={article.image} 
+                      <img
+                        src={article.image}
                         alt={article.title}
                         className="w-[420px] h-[282px] rounded absolute left-0 top-px object-cover"
                       />
@@ -229,9 +265,9 @@ export default function News() {
               {/* First Row */}
               <div className="flex h-[257px] items-center gap-12 self-stretch">
                 {mediaCoverageImages.slice(0, 4).map((src, idx) => (
-                  <img 
-                    key={idx} 
-                    src={src} 
+                  <img
+                    key={idx}
+                    src={src}
                     alt={`Media coverage ${idx + 1}`}
                     className="flex-1 self-stretch rounded border border-gray-300 object-cover"
                   />
@@ -241,9 +277,9 @@ export default function News() {
               {/* Second Row */}
               <div className="flex h-[257px] items-center gap-12 self-stretch">
                 {mediaCoverageImages.slice(4, 8).map((src, idx) => (
-                  <img 
-                    key={idx + 4} 
-                    src={src} 
+                  <img
+                    key={idx + 4}
+                    src={src}
                     alt={`Media coverage ${idx + 5}`}
                     className="flex-1 self-stretch rounded border border-gray-300 object-cover"
                   />
