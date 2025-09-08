@@ -33,4 +33,14 @@ const App = () => (
   </QueryClientProvider>
 );
 
-createRoot(document.getElementById("root")!).render(<App />);
+const container = document.getElementById("root");
+if (container) {
+  const key = "__react_app_root__";
+  const c = container as unknown as { [k: string]: any };
+  let root = c[key];
+  if (!root) {
+    root = createRoot(container);
+    c[key] = root;
+  }
+  root.render(<App />);
+}
