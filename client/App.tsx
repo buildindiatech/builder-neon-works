@@ -10,6 +10,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import News from "./pages/News";
 import NewsDetail from "./pages/NewsDetail";
+import DholeraSir from "./pages/DholeraSir";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
